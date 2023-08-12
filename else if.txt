@@ -1,0 +1,29 @@
+ if (eo.target.className == "icon-trash icon") {
+    eo.target.parentElement.parentElement.remove();
+  } 
+  else if (eo.target.className == "icon-angry2 icon") {
+    eo.target.classList.add("dn");
+    const amr = `<span class="icon-heart"></span>`;
+
+    eo.target.parentElement.parentElement
+      .getElementsByClassName("test")[0]
+      .classList.add("finish");
+
+    eo.target.parentElement.innerHTML += amr;
+  }
+  else if (eo.target.className=="icon-heart") {
+    eo.target.classList.add("dn")
+    eo.target.parentElement.parentElement
+      .getElementsByClassName("test")[0]
+      .classList.remove("finish");
+      const amor = `  <span class="icon-angry2 icon"></span>`
+eo.target.parentElement.innerHTML+=amor
+  }
+  else if (eo.target.className=="icon-star icon") {
+    eo.target.classList.add("orange")
+    bard.prepend(eo.target.parentElement)
+  }
+  else if (eo.target.className=="icon-star icon orange"){
+eo.target.classList.remove("orange")
+
+  }
